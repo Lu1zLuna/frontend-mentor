@@ -1,0 +1,72 @@
+/* External resources */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap');
+
+/* Root variables for theme colors */
+:root {--Grayish-blue :hsl(220, 15%, 55%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-blue: hsl(218, 44%, 22%);
+  }
+
+/* Universal base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    align-items: center;
+    background-color: var(--Light-gray);
+    display: flex;    
+    flex-direction: column;
+    font-family: "Outfit", sans-serif; 
+    height: calc(100vh - 1px);
+    justify-content: center;
+    margin: 1.25rem;
+  }
+
+/* Container and its elements */
+.container {
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 0.7rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+.container .image-qr-code {
+    border-radius: 0.7rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.container .component-title {
+    color: var(--Dark-blue);
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.container .main-text {
+    color: var(--Grayish-blue);
+    font-size: 15px;
+    margin: 1rem;
+}
+
+
+/* Attribution styles */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (min-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
